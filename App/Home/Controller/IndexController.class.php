@@ -40,5 +40,9 @@ class IndexController extends Controller {
         
         return $this->display("act");
     }
+    
+    public function testHook(){
+        hook('my_tags');
+    }
 
 }
