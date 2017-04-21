@@ -11,7 +11,10 @@ class IndexController extends Controller {
     public function index() {
         return $this->show("我在玩", "utf-8");
     }
-
+    
+    /**
+     * @return page files
+     */
     public function act() {
         $ucenterModel = new UcenterModel();
         $borrowModel  = new BorrowModel();
