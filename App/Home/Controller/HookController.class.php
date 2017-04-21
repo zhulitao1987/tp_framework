@@ -8,6 +8,7 @@ class HookController extends BaseController {
 
     public function index() {
         echo 'hello,我是tp';
+        echo '修复BUG';
         exit;
     }
 
