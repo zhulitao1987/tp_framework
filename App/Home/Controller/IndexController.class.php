@@ -2,14 +2,14 @@
 
 namespace Home\Controller;
 
-use Home\Controller\Base\BaseController;
+use Think\Controller;
 use Home\Model\ucenter\UcenterModel;
 use Home\Model\borrow\BorrowModel;
 
-class IndexController extends BaseController {
+class IndexController extends Controller {
 
     public function index() {
-        $this->show("我在玩", "utf-8");
+        return $this->show("我在玩", "utf-8");
     }
 
     public function act() {
@@ -20,8 +20,8 @@ class IndexController extends BaseController {
         $borrowRet    = $borrowModel->test();
          
         $config_test  = C('BLDUrl');
-        echo $config_test;
-        
+        echo $config_test, '<br>';
+
         $common       = test();
         echo $common, '<br>';
         
@@ -30,10 +30,6 @@ class IndexController extends BaseController {
         
         $common2      = common2();
         echo $common2, '<br>';
-        
-        ///test compotent
-//        $aaa = TestHelper::test();
-//        echo $aaa;
         
         $this->assign("ucenterRet", $ucenterRet);
         $this->assign("borrowRet", $borrowRet);

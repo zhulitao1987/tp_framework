@@ -2,10 +2,12 @@
 
 namespace Home\Behavior;
 
-class TestBehavior {
+use Think\Behavior;
+
+class TestBehavior extends Behavior {
 
     public function run(&$params) {
-        echo "REQUEST BEHAVIOR" . $params;
+        echo "REQUEST BEHAVIOR" . $params, '<br>';
     }
 
 }
