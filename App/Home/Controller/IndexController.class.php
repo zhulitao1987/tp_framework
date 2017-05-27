@@ -7,7 +7,7 @@ use Home\Model\ucenter\UcenterModel;
 use Home\Model\borrow\BorrowModel;
 
 class IndexController extends Controller {
-
+    
     public function index() {
         return $this->show("我在玩", "utf-8");
     }

@@ -5,8 +5,10 @@
  */
 return array(
     'app_init' => array(
-        'test' => 'Home\Behavior\TestBehavior',
-        'CheckLogin' => 'Home\Behavior\CheckLoginBehavior'
+        'Home\Behavior\TestBehavior',
+        'Home\Behavior\CheckLoginBehavior'
     ),
-    'my_tags' => array('Home\Behavior\TagsBehavior')
+    'my_tags' => array(
+        'Home\Behavior\TagsBehavior'
+    )
 );

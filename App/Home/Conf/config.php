@@ -2,7 +2,7 @@
 
 $array = array(
     //'配置项'=>'配置值'
-
+    'HTML_CACHE_ON'     => true,
     'URL_ROUTER_ON'     => true,//开启路由规则
     'MODULE_ALLOW_LIST' => array('Home'),
     'URL_MODEL'         => 2,
