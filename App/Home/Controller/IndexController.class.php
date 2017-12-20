@@ -15,7 +15,7 @@ class IndexController extends Controller {
     /**
      * @return page files
      */
-    public function act() {
+    public function act() { 
         $ucenterModel = new UcenterModel();
         $borrowModel  = new BorrowModel();
         
@@ -45,4 +45,4 @@ class IndexController extends Controller {
         hook('my_tags');
     }
 
-}
+    }
